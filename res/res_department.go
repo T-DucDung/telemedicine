@@ -13,5 +13,6 @@ type DetailResDepartment struct {
 	Name         string `json:"name"`
 	Phone        string `json:"phone"`
 	Address      string `json:"address"`
+	Image        string `json:"image"`
 	IdDepartment string `json:"id_department"`
 }
