@@ -10,6 +10,7 @@ type MainController struct {
 	beego.Controller
 }
 
+// @router / [get]
 func (c *MainController) Get() {
 	c.Data["Object"] = models.Object{A: "Nam", B: 21}
 	c.Data["Array"] = []int{1, 2, 3, 4, 5, 6, 7}
