@@ -503,3 +503,8 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.6rem;}
 	.font-x3{font-size:1.8rem;}
 }
+
+.comment{
+	width: 60px;
+	height: 60px;
+}

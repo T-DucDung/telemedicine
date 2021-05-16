@@ -110,10 +110,9 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <article class="group">
       <div class="one_half first">
-        <h6 class="heading underline font-x2">Hệ thống giường bệnh chất lượng cao</h6>
-        <p>Nec vel purus in leo elit mattis non imperdiet sed pulvinar.</p>
-        <p class="btmspace-30">At sapien phasellus euismod augue sit amet nibh sed egestas convallis leo etiam sed nulla morbi lacus sapien venenatis id cursus in bibendum eget ligula sed vel nisi nec augue sagittis volutpat&hellip;</p>
-        <footer><a class="btn" href="#">Read More</a></footer>
+        <h6 class="heading underline font-x2">Hệ thống giường bgiường bệnh chất lượng cao</h6>
+        <p>Hệ thống giường bệnh được nhập khẩu từ nước ngoài mang đến cho người bệnh cảm giác thoải mái dù phải nằm trong thời gian dài.</p>
+        <footer><a class="btn" href="#">Xem thêm</a></footer>
       </div>
       <div class="one_half"><a class="imgover" href="#"><img class="borderedbox inspace-10" src="images/main-1.jpg" alt=""></a></div>
     </article>
@@ -125,12 +124,12 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper bgded overlay dark" style="background-image:url('images/demo/backgrounds/01.png');">
+<div class="wrapper bgded overlay dark" style="background-image:url('images/banner/1.jpg');">
   <div id="shout" class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <article>
-      <h3 class="heading font-x2">Ut augue libero suscipit sagittis</h3>
-      <p>Adipiscing dignissim non lectus pellentesque tellus nisi imperdiet at pretium ut iaculis tempor ligula nulla facilisi aliquam venenatis leo et orci sed mauris fusce aliquam suspendisse potenti sed tempus tempor.</p>
+      <h3 class="heading font-x2">Dịch vụ chăm sóc sức khỏe đi đầu thế giới</h3>
+      <p>Với sự hỗ trợ của các chuyên gia đầu ngành trên toàn thế giới về các vấn đề trong y học. Chúng tôi đảm bảo cung cấp các dịch vụ như các bệnh viện hàng đầu.</p>
     </article>
     <!-- ################################################################################################ -->
   </div>
@@ -142,48 +141,27 @@ Licence URI: https://www.os-templates.com/template-terms
   <section id="services" class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="center btmspace-80">
-      <h6 class="heading underline font-x2">Orci mauris pede erat</h6>
+      <h6 class="heading underline font-x2">Tin tức</h6>
     </div>
     <ul class="nospace group">
       <li class="one_third">
-        <article><a href="#"><i class="fab fa-fort-awesome"></i></a>
-          <h6 class="heading">Fringilla</h6>
-          <p>Tempus eget mattis et risus nulla ligula in quam sed lobortis rutrum purus pellentesque dictum augue in quam.</p>
+        <article><a href="#"><i class="fas fa-globe"></i></a>
+          <h6 class="heading">Tin Quốc Tế</h6>
+          <p>Các thông tin về tình hình y tế trên toàn thế giới.</p>
           <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
         </article>
       </li>
       <li class="one_third">
-        <article><a href="#"><i class="fab fa-deviantart"></i></a>
-          <h6 class="heading">Tristique</h6>
-          <p>Nunc rhoncus nisi eu est nulla dolor donec ut dolor aliquam eget nunc etiam consequat enim vel nisl donec.</p>
+        <article><a href="#"><i class="fas fa-medkit"></i></a>
+          <h6 class="heading">Tin Chuyên Môn</h6>
+          <p>Các thông tin chuyên ngành, kĩ thuật mới trong điều trị và phòng ngừa</p>
           <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
         </article>
       </li>
       <li class="one_third">
-        <article><a href="#"><i class="fab fa-sticker-mule"></i></a>
-          <h6 class="heading">Bibendum</h6>
-          <p>Hendrerit velit ac augue cras pharetra donec ligula mauris euismod sed lobortis quis ultricies lacus aenean.</p>
-          <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class="fas fa-user-secret"></i></a>
-          <h6 class="heading">Phasellus</h6>
-          <p>Auctor lorem a felis aliquam quam mi rutrum malesuada consequat vitae accumsan ut lacus aliquam ante tortor.</p>
-          <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class="fas fa-quidditch"></i></a>
-          <h6 class="heading">Vestibulum</h6>
-          <p>Suscipit sed semper ac nulla quisque eget lectus a quam ullamcorper consectetuer aliquam molestie tempor mauris.</p>
-          <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class="fas fa-wheelchair"></i></a>
-          <h6 class="heading">Pellentesque</h6>
-          <p>Nunc accumsan metus quis metus vestibulum ut neque proin commodo semper magna aenean id eros vitae.</p>
+        <article><a href="#"><i class="far fa-calendar-minus"></i></a>
+          <h6 class="heading">Tin Trong Ngày</h6>
+          <p>Tin tức trong ngày về tình hình y tế trong nước và quốc tế.</p>
           <footer><a href="#"><i class="fas fa-arrow-right"></i></a></footer>
         </article>
       </li>
@@ -194,11 +172,10 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper bgded overlay light" style="background-image:url('images/demo/backgrounds/01.png');">
+<div class="wrapper bgded overlay light" style="background-image:url('images/banner/2.jpg');background-position: center">
   <section id="cta" class="hoc container clear"> 
     <!-- ################################################################################################ -->
-    <h6 class="three_quarter first">Pellentesque tincidunt et natoque penatibus</h6>
-    <footer class="one_quarter"><a class="btn" href="#">Parturient nascetur</a></footer>
+    <h6 class="three_quarter first">Đội ngũ y bác sĩ</h6>
     <!-- ################################################################################################ -->
   </section>
 </div>
@@ -214,11 +191,10 @@ Licence URI: https://www.os-templates.com/template-terms
     <ul class="nospace group">
       <li class="one_quarter first">
         <article>
-          <figure><a class="imgover" href="#"><img src="images/demo/300x300.png" alt=""></a>
-            <figcaption class="heading">Jane Doe</figcaption>
+          <figure><a class="imgover" href="#"><img src="images/people/1.jpg" alt=""></a>
+            <figcaption class="heading">Mai Trọng Khoa</figcaption>
           </figure>
-          <em>Job Type Here</em>
-          <p>Nulla etiam eget lacus sit amet eros tempus elementum vivamus ligula mauris blandit eu [<a href="#">&hellip;</a>]</p>
+          <em>Phó Giám đốc phụ trách Chuyên môn</em>
           <footer>
             <ul class="faico clear">
               <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
@@ -232,11 +208,10 @@ Licence URI: https://www.os-templates.com/template-terms
       </li>
       <li class="one_quarter">
         <article>
-          <figure><a class="imgover" href="#"><img src="images/demo/300x300.png" alt=""></a>
-            <figcaption class="heading">John Doe</figcaption>
+          <figure><a class="imgover" href="#"><img src="images/people/2.jpg" alt=""></a>
+            <figcaption class="heading">Nguyễn Quang Tuấn</figcaption>
           </figure>
-          <em>Job Type Here</em>
-          <p>Phasellus congue dictum tortor maecenas eget erat eget nulla venenatis vehicula duis posuere [<a href="#">&hellip;</a>]</p>
+          <em>Giám đốc bệnh viện</em>
           <footer>
             <ul class="faico clear">
               <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
@@ -250,11 +225,10 @@ Licence URI: https://www.os-templates.com/template-terms
       </li>
       <li class="one_quarter">
         <article>
-          <figure><a class="imgover" href="#"><img src="images/demo/300x300.png" alt=""></a>
-            <figcaption class="heading">Janet Doe</figcaption>
+          <figure><a class="imgover" href="#"><img src="images/people/3.jpg" alt=""></a>
+            <figcaption class="heading">Đỗ Doãn Lợi</figcaption>
           </figure>
-          <em>Job Type Here</em>
-          <p>Tellus vel fringilla auctor nisi arcu semper urna at congue lectus nisi ac neque in hac [<a href="#">&hellip;</a>]</p>
+          <em>Phó Giám đốc phụ trách Chuyên môn</em>
           <footer>
             <ul class="faico clear">
               <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
@@ -268,11 +242,10 @@ Licence URI: https://www.os-templates.com/template-terms
       </li>
       <li class="one_quarter">
         <article>
-          <figure><a class="imgover" href="#"><img src="images/demo/300x300.png" alt=""></a>
-            <figcaption class="heading">Jamie Doe</figcaption>
+          <figure><a class="imgover" href="#"><img src="images/people/4.jpg" alt=""></a>
+            <figcaption class="heading">Nguyễn Ngọc Hiền</figcaption>
           </figure>
-          <em>Job Type Here</em>
-          <p>Habitasse platea dictumst nulla facilisi nulla facilisi phasellus tincidunt est a tortor [<a href="#">&hellip;</a>]</p>
+          <em>Phó Giám đốc Phụ trách Kinh tế y tế</em>
           <footer>
             <ul class="faico clear">
               <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
@@ -295,93 +268,38 @@ Licence URI: https://www.os-templates.com/template-terms
   <section id="testimonials" class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="center btmspace-80">
-      <h6 class="heading underline font-x2">Quisque sodales morbi</h6>
+      <h6 class="heading underline font-x2">Đánh giá của bệnh nhân</h6>
     </div>
     <ul class="nospace group btmspace-80">
       <li class="one_third first">
-        <blockquote>Magna arcu pharetra eu interdum quis blandit ac orci phasellus sit amet leo lobortis orci imperdiet tempus sed tincidunt arcu in consequat pretium quam lacus rhoncus orci lobortis sagittis</blockquote>
-        <figure class="clear"><img class="circle" src="images/demo/60x60.png" alt="">
+        <blockquote>Bệnh viện sạch sẽ, đội ngũ y bác sĩ nhiệt tình</blockquote>
+        <figure class="clear"><img class="circle comment" src="images/dummy.jpg" alt="">
           <figcaption>
-            <h6 class="heading">A. Doe</h6>
-            <em>CEO / Company Name</em></figcaption>
+            <h6 class="heading">Nguyễn</h6>
+            <em>Bệnh nhân</em></figcaption>
         </figure>
       </li>
       <li class="one_third">
-        <blockquote>Lorem leo vel ligula vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; quisque urna velit accumsan bibendum scelerisque sed suscipit a velit duis nec ipsum</blockquote>
-        <figure class="clear"><img class="circle" src="images/demo/60x60.png" alt="">
+        <blockquote>Môi trường bệnh viện yên tĩnh, </blockquote>
+        <figure class="clear"><img class="circle comment" src="images/dummy.jpg" alt="">
           <figcaption>
-            <h6 class="heading">B. Doe</h6>
-            <em>Director / Company Name</em></figcaption>
+            <h6 class="heading">Văn</h6>
+            <em>Bệnh nhân</em></figcaption>
         </figure>
       </li>
       <li class="one_third">
-        <blockquote>Sed urna egestas consectetuer suspendisse lorem ut tortor est lobortis eu venenatis vitae pretium eu felis cras erat est cursus sed dignissim sed euismod in turpis praesent vestibulum hendrerit</blockquote>
-        <figure class="clear"><img class="circle" src="images/demo/60x60.png" alt="">
+        <blockquote>Không khí trong lành, thích hợp cho người bệnh phục hồi sức khỏe</blockquote>
+        <figure class="clear"><img class="circle comment" src="images/dummy.jpg" alt="">
           <figcaption>
-            <h6 class="heading">C. Doe</h6>
-            <em>Marketing / Company Name</em></figcaption>
+            <h6 class="heading">Trần</h6>
+            <em>Bệnh nhân</em></figcaption>
         </figure>
       </li>
     </ul>
-    <footer><a class="btn" href="#">View More &raquo;</a></footer>
+    <footer><a class="btn" href="#">Xem tiếp &raquo;</a></footer>
     <!-- ################################################################################################ -->
   </section>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row2">
-  <section class="hoc container clear"> 
-    <!-- ################################################################################################ -->
-    <div class="center btmspace-80">
-      <h6 class="heading underline font-x2">Ante duis eu dui semper</h6>
-    </div>
-    <ul class="nospace group latest">
-      <li class="one_third first">
-        <article>
-          <time datetime="2045-04-06T08:15+00:00"><i class="far fa-calendar-alt rgtspace-5"></i> 06<sup>th</sup> April 2045 @ 15:00pm</time>
-          <div class="excerpt">
-            <h6 class="heading"><a href="#">Ante euismod viverra integer sagittis mauris facilisis</a></h6>
-            <p>Dolor semper massa fusce condimentum elit sit amet est aenean dui suspendisse mattis aenean est massa vulputate eget eleifend ac consequat non velit vestibulum ante ipsum [<a href="#">&hellip;</a>]</p>
-            <ul class="meta">
-              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
-              <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
-            </ul>
-          </div>
-        </article>
-      </li>
-      <li class="one_third">
-        <article>
-          <time datetime="2045-04-05T08:14+00:00"><i class="far fa-calendar-alt rgtspace-5"></i> 05<sup>th</sup> April 2045 @ 14:00pm</time>
-          <div class="excerpt">
-            <h6 class="heading"><a href="#">Primis in faucibus orci luctus et ultrices posuere</a></h6>
-            <p>Cubilia curae vivamus feugiat ultrices ligula cras nec risus in a nulla nam tempus odio in erat suspendisse potenti fusce eleifend maecenas tempus gravida lorem pellentesque [<a href="#">&hellip;</a>]</p>
-            <ul class="meta">
-              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
-              <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
-            </ul>
-          </div>
-        </article>
-      </li>
-      <li class="one_third">
-        <article>
-          <time datetime="2045-04-04T08:13+00:00"><i class="far fa-calendar-alt rgtspace-5"></i> 04<sup>th</sup> April 2045 @ 13:00pm</time>
-          <div class="excerpt">
-            <h6 class="heading"><a href="#">Justo maecenas sit amet mi nulla at erat adipiscing</a></h6>
-            <p>Enim condimentum varius cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus suspendisse aliquam lacus vitae mauris blandit semper donec [<a href="#">&hellip;</a>]</p>
-            <ul class="meta">
-              <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
-              <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
-            </ul>
-          </div>
-        </article>
-      </li>
-    </ul>
-    <!-- ################################################################################################ -->
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row4">
   <footer id="footer" class="hoc clear"> 
