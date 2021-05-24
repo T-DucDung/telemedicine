@@ -37,8 +37,19 @@ func (c *GioiThieuController) Get() {
 		log.Println(err, "err controllers/gioithieu.go:19")
 		return
 	}
-	log.Println(num)
+	log.Println(num, "num controllers/gioithieu.go:40")
+	if page < num && page > 1 {
+		c.Data["truoc"] = true
+		c.Data["sau"] = true
+	} else if page == 1 {
+		c.Data["truoc"] = false
+		c.Data["sau"] = true
+	} else if page == num {
+		c.Data["truoc"] = true
+		c.Data["sau"] = false
+	}
 	c.Data["res"] = res
-	c.Data["num"] = num
+	c.Data["numtrc"] = page - 1
+	c.Data["numsau"] = page + 1
 	return
 }

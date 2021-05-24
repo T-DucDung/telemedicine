@@ -76,7 +76,7 @@ Licence URI: https://www.os-templates.com/template-terms
         {{range $key, $val := .res}}
             <li>
             <div class="news">
-                <a href="" style="display: flex;">
+                <a href="./thongtin/{{$val.Id}}" style="display: flex;">
                     <img src="/images/decription/{{$val.Image}}" style="width: 300px;border-radius: 5px;height: 200px;"> </img>
                     <div style="margin-left: 50px;">
                         <h1>{{$val.Title}}</h1>
@@ -87,6 +87,14 @@ Licence URI: https://www.os-templates.com/template-terms
             </li>
         {{end}}
       </ul>
+      <div class="paginate" style="text-align: center;">
+        {{if .truoc}}
+        <a href="./thongtin?page={{.numtrc}}" class="previous" style="text-decoration: none;display: inline-block;padding: 8px 16px;background-color: #f1f1f1;color: black;">&laquo; Trang trước</a>
+        {{end}}
+        {{if .sau}}
+        <a href="./thongtin?page={{.numsau}}" class="next" style="text-decoration: none;display: inline-block;padding: 8px 16px;background-color: #f1f1f1;color: black;">Trang Sau &raquo;</a>
+        {{end}}
+      </div>
       </div>
     </div>
 

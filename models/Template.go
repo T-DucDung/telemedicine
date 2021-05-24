@@ -90,7 +90,7 @@ func (this *Template) Getlist(page int) ([]res.ResTempList, int, error) {
 		}
 	}
 
-	log.Println(detail)
+	//log.Println(detail)
 
 	return detail, numPage, err
 }
