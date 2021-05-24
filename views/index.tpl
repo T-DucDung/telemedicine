@@ -16,15 +16,11 @@ Licence URI: https://www.os-templates.com/template-terms
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper row0">
   <header id="header" class="hoc clear"> 
-    <!-- ################################################################################################ -->
+
     <div id="logo" class="one_quarter first">
-      <h1 class="logoname clear"><a href="index.html"><img src="images/174105160_557071681928223_2630622840456043535_n.png"></a></h1>
-      <p>Potenti sagittis aliquam iaculis</p>
+      <h1 class="logoname clear"><a href="#"><i class="fas fa-handshake"></i> <span> Shicso</span></a></h1>
     </div>
     <div class="three_quarter">
       <ul class="nospace clear">
@@ -39,56 +35,30 @@ Licence URI: https://www.os-templates.com/template-terms
         </li>
       </ul>
     </div>
-    <!-- ################################################################################################ -->
+
   </header>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper row1">
-  <div class="hoc clear"> 
-    <!-- ################################################################################################ -->
+  <div class="hoc clear">
     <nav id="mainav">
       <ul class="clear">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a class="drop" href="#">Pages</a>
+        <li class="active"><a href="./">Trang Chủ</a></li>
+        <li><a class="drop" href="#">Giới thiệu</a>
           <ul>
-            <li><a href="pages/gallery.html">Gallery</a></li>
-            <li><a href="pages/full-width.html">Full Width</a></li>
-            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
-            <li><a href="pages/font-icons.html">Font Icons</a></li>
+            <li><a href="./thongtin/1">Sơ Đồ Bệnh Viện</a></li>
+            <li><a href="./thongtin/2">Ban Giám Đốc</a></li>
+            <li><a href="./thongtin/12">Thành Tích</a></li>
           </ul>
         </li>
-        <li><a class="drop" href="#">Dropdown</a>
-          <ul>
-            <li><a href="#">Level 2</a></li>
-            <li><a class="drop" href="#">Level 2 + Drop</a>
-              <ul>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Level 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Tin tức</a></li>
+        <li><a href="./thongtin">Tin tức</a></li>
         <li><a href="#">Chat với chúng tôi</a></li>
-        <li><a href="#">Link Text</a></li>
-        <li><a href="#">Long Link Text</a></li>
       </ul>
     </nav>
-    <!-- ################################################################################################ -->
   </div>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper bgded overlay" style="background-image:url('images/Thumbnail.jpg');">
   <div id="pageintro" class="hoc clear"> 
-    <!-- ################################################################################################ -->
+
     <article>
       <h3 class="heading">Chào mừng đến với bệnh viện</h3>
       <footer>
@@ -98,48 +68,39 @@ Licence URI: https://www.os-templates.com/template-terms
         </ul>
       </footer>
     </article>
-    <!-- ################################################################################################ -->
+
   </div>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper row3">
   <main class="hoc container clear"> 
     <!-- main body -->
-    <!-- ################################################################################################ -->
+
     <article class="group">
       <div class="one_half first">
-        <h6 class="heading underline font-x2">Hệ thống giường bgiường bệnh chất lượng cao</h6>
+        <h6 class="heading underline font-x2">Hệ thống giường bệnh chất lượng cao</h6>
         <p>Hệ thống giường bệnh được nhập khẩu từ nước ngoài mang đến cho người bệnh cảm giác thoải mái dù phải nằm trong thời gian dài.</p>
         <footer><a class="btn" href="#">Xem thêm</a></footer>
       </div>
       <div class="one_half"><a class="imgover" href="#"><img class="borderedbox inspace-10" src="images/main-1.jpg" alt=""></a></div>
     </article>
-    <!-- ################################################################################################ -->
+
     <!-- / main body -->
     <div class="clear"></div>
   </main>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper bgded overlay dark" style="background-image:url('images/banner/1.jpg');">
   <div id="shout" class="hoc container clear"> 
-    <!-- ################################################################################################ -->
+
     <article>
       <h3 class="heading font-x2">Dịch vụ chăm sóc sức khỏe đi đầu thế giới</h3>
       <p>Với sự hỗ trợ của các chuyên gia đầu ngành trên toàn thế giới về các vấn đề trong y học. Chúng tôi đảm bảo cung cấp các dịch vụ như các bệnh viện hàng đầu.</p>
     </article>
-    <!-- ################################################################################################ -->
+
   </div>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper row3">
   <section id="services" class="hoc container clear"> 
-    <!-- ################################################################################################ -->
+
     <div class="center btmspace-80">
       <h6 class="heading underline font-x2">Tin tức</h6>
     </div>
@@ -166,25 +127,19 @@ Licence URI: https://www.os-templates.com/template-terms
         </article>
       </li>
     </ul>
-    <!-- ################################################################################################ -->
+
   </section>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper bgded overlay light" style="background-image:url('images/banner/2.jpg');background-position: center">
   <section id="cta" class="hoc container clear"> 
-    <!-- ################################################################################################ -->
+
     <h6 class="three_quarter first">Đội ngũ y bác sĩ</h6>
-    <!-- ################################################################################################ -->
+
   </section>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper row3">
   <section id="team" class="hoc container clear"> 
-    <!-- ################################################################################################ -->
+
     <div class="center btmspace-80">
       <h6 class="heading underline font-x2">Cán bộ tiêu biểu</h6>
     </div>
@@ -258,15 +213,12 @@ Licence URI: https://www.os-templates.com/template-terms
         </article>
       </li>
     </ul>
-    <!-- ################################################################################################ -->
+
   </section>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper row3">
   <section id="testimonials" class="hoc container clear"> 
-    <!-- ################################################################################################ -->
+
     <div class="center btmspace-80">
       <h6 class="heading underline font-x2">Đánh giá của bệnh nhân</h6>
     </div>
@@ -297,15 +249,14 @@ Licence URI: https://www.os-templates.com/template-terms
       </li>
     </ul>
     <footer><a class="btn" href="#">Xem tiếp &raquo;</a></footer>
-    <!-- ################################################################################################ -->
+
   </section>
 </div>
-<!-- ################################################################################################ -->
 <div class="wrapper row4">
   <footer id="footer" class="hoc clear"> 
-    <!-- ################################################################################################ -->
+
     <div class="one_quarter first">
-      <h1 class="logoname clear"><a href="index.html"><i class="fas fa-handshake"></i> <span>Shicso</span></a></h1>
+      <h1 class="logoname clear"><a href="#"><i class="fas fa-handshake"></i> <span>Shicso</span></a></h1>
       <p class="btmspace-30">Leo scelerisque at imperdiet in volutpat quis turpis praesent sit amet ante sed erat tempor consequat sed ut nibh nullam sagittis nunc a turpis nec [<a href="#">&hellip;</a>]</p>
       <ul class="faico clear">
         <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
@@ -354,23 +305,17 @@ Licence URI: https://www.os-templates.com/template-terms
         </li>
       </ul>
     </div>
-    <!-- ################################################################################################ -->
+
   </footer>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
-    <!-- ################################################################################################ -->
+
     <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
     <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-    <!-- ################################################################################################ -->
+
   </div>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
 <script src="layout/scripts/jquery.min.js"></script>

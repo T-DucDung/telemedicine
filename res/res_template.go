@@ -10,3 +10,10 @@ type DetailResTemp struct {
 	String string `json:"string"`
 	Type   string `json:"type"`
 }
+
+type ResTempList struct {
+	Id      int `json:"id"`
+	Title   string `json:"title"`
+	Image   string `json:"image"`
+	Context string `json:"context"`
+}

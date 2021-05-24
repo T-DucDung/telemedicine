@@ -7,16 +7,27 @@ import (
 
 func init() {
 
-    beego.GlobalControllerRouter["telemedicine/controllers:MainController"] = append(beego.GlobalControllerRouter["telemedicine/controllers:MainController"],
+    beego.GlobalControllerRouter["telemedicine/controllers:GioiThieuController"] = append(beego.GlobalControllerRouter["telemedicine/controllers:GioiThieuController"],
         beego.ControllerComments{
             Method: "Get",
-            Router: "/",
+            Router: "/thongtin/",
             AllowHTTPMethods: []string{"get"},
             MethodParams: param.Make(),
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["telemedicine/controllers:NewsController"] = append(beego.GlobalControllerRouter["telemedicine/controllers:NewsController"],
+    beego.GlobalControllerRouter["telemedicine/controllers:GioiThieuController"] = append(beego.GlobalControllerRouter["telemedicine/controllers:GioiThieuController"],
+        beego.ControllerComments{
+            Method: "GetGt",
+            Router: "/thongtin/:id",
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(
+				param.New("id", param.InPath),
+			),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["telemedicine/controllers:MainController"] = append(beego.GlobalControllerRouter["telemedicine/controllers:MainController"],
         beego.ControllerComments{
             Method: "Get",
             Router: "/",
