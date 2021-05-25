@@ -19,75 +19,72 @@ Licence URI: https://www.os-templates.com/template-terms
 </head>
 
 <body id="top">
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <div class="wrapper row0">
-    <header id="header" class="hoc clear">
-      <!-- ################################################################################################ -->
-      <div id="logo" class="one_quarter first">
-        <h1 class="logoname clear"><a href="./index.html"><i class="fas fa-handshake"></i> <span>Shicso</span></a></h1>
-        <p>Potenti sagittis aliquam iaculis</p>
-      </div>
-      <div class="three_quarter">
-        <ul class="nospace clear">
-          <li class="one_third first">
-            <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong>
-                +00 (123) 456 7890</span></div>
-          </li>
-          <li class="one_third">
-            <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a
-                  mail:</strong> support@domain.com</span></div>
-          </li>
-          <li class="one_third">
-            <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Mon. - Sat.:</strong>
-                08.00am - 18.00pm</span></div>
-          </li>
-        </ul>
-      </div>
-      <!-- ################################################################################################ -->
-    </header>
-  </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <div class="wrapper row1">
-    <div class="hoc clear">
-      <!-- ################################################################################################ -->
-      <nav id="mainav">
-        <ul class="clear">
-          <li><a href="../index.html">Home</a></li>
-          <li class="active"><a class="drop" href="#">Pages</a>
-            <ul>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li class="active"><a href="full-width.html">Full Width</a></li>
-              <li><a href="sidebar-left.html">Sidebar Left</a></li>
-              <li><a href="sidebar-right.html">Sidebar Right</a></li>
-              <li><a href="basic-grid.html">Basic Grid</a></li>
-              <li><a href="font-icons.html">Font Icons</a></li>
-            </ul>
-          </li>
-          <li><a class="drop" href="#">Dropdown</a>
-            <ul>
-              <li><a href="#">Level 2</a></li>
-              <li><a class="drop" href="#">Level 2 + Drop</a>
-                <ul>
-                  <li><a href="#">Level 3</a></li>
-                  <li><a href="#">Level 3</a></li>
-                  <li><a href="#">Level 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Level 2</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Link Text</a></li>
-          <li><a href="#">Link Text</a></li>
-          <li><a href="#">Link Text</a></li>
-          <li><a href="#">Long Link Text</a></li>
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <header id="header" class="hoc clear">
+
+    <div id="logo" class="one_quarter first">
+      <h1 class="logoname clear"><a href="#"><i class="fas fa-handshake"></i> <span> Shicso</span></a></h1>
     </div>
+    <div class="three_quarter">
+      <ul class="nospace clear">
+        <li class="one_third first">
+          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Gọi chúng tôi tại:</strong> +00 (123) 456 7890</span></div>
+        </li>
+        <li class="one_third">
+          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Email:</strong> support@domain.com</span></div>
+        </li>
+        <li class="one_third">
+          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Thứ hai - Chủ nhật:</strong> 8 giờ - 21 giờ</span></div>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+</div>
+  <div class="wrapper row1">
+    <div class="hoc clear" style="display: flex;align-items: center;justify-content: space-between;">
+        <nav id="mainav" style="width: 70%;">
+          <ul class="clear">
+            <li><a href="./">Trang Chủ</a></li>
+            <li><a class="drop" href="#">Giới thiệu</a>
+              <ul>
+                <li><a href="./thongtin/15">Giới Thiệu Bệnh Viện</a></li>
+                <li><a href="./thongtin/16">Nhiệm Vụ Của Bệnh Viện</a></li>
+                <li><a href="./thongtin/1">Sơ Đồ Bệnh Viện</a></li>
+                <li><a href="./thongtin/2">Ban Giám Đốc</a></li>
+                <li><a href="./thongtin/17">Phó Giám Đốc</a></li>
+                <li><a href="./thongtin/12">Thành Tích</a></li>
+              </ul>
+            </li>
+             <li><a class="drop" href="#">Về Các Phòng Ban</a>
+                <ul>
+                    <li><a href="./thongtin/18">Khoa Khám bệnh</a></li>
+                    <li><a href="./thongtin/19">Khoa Cấp Cứu</a></li>
+                    <li><a href="./thongtin/20">Khoa khám bệnh theo yêu cầu</a></li>
+                    <li><a href="./thongtin/21">Phòng Vật tư- Trang thiết bị Y tế</a></li>
+                    <li><a href="./thongtin/22">Khoa Kiểm soát nhiễm khuẩn</a></li>
+                    <li><a href="./thongtin/23">Khoa Vi rút - Ký sinh trùng</a></li>
+                </ul>
+            </li>
+            <li><a href="./thongtin">Tin tức</a></li>
+            <li class="active"><a href="#">Chat với chúng tôi</a></li>
+          </ul>
+        </nav>
+        {{if .isLogin}}
+            <nav id="mainav" style="width: 30%;text-align: right;">
+            <ul class="clear">
+                <li><a class="drop" href="#">{{.name}}</a>
+                    <ul>
+                        <li><a style="text-align: left;" href="#">Thông Tin Người Dùng</a></li>
+                        <li><a style="text-align: left;" href="?logout=true">Đăng Xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </nav>
+        {{else}}
+         <div style="width: 30%;text-align: right;"><a href="./login">ĐĂNG NHẬP</a></div>
+         {{end}}
+      </div>
   </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
@@ -95,13 +92,8 @@ Licence URI: https://www.os-templates.com/template-terms
   <div class="wrapper bgded overlay dark" style="background-image:url('../images/demo/backgrounds/01.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
-      <h6 class="heading">Full Width</h6>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Ipsum</a></li>
-        <li><a href="#">Dolor</a></li>
-      </ul>
+      <h6 class="heading">Tổ Tư Vấn Nhanh</h6>
+
       <!-- ################################################################################################ -->
     </div>
   </div>
@@ -132,8 +124,8 @@ Licence URI: https://www.os-templates.com/template-terms
 
       <div class="one_quarter first">
         <h1 class="logoname clear"><a href="../index.html"><i class="fas fa-handshake"></i> <span>Shicso</span></a></h1>
-        <p class="btmspace-30">Leo scelerisque at imperdiet in volutpat quis turpis praesent sit amet ante sed erat
-          tempor consequat sed ut nibh nullam sagittis nunc a turpis nec [<a href="#">&hellip;</a>]</p>
+        <p class="btmspace-30">Dịch vụ chăm sóc sức khỏe đi đầu thế giới Với sự hỗ trợ của các
+          chuyên gia đầu ngành trên toàn thế giới về các vấn đề trong y học [<a href="#">&hellip;</a>]</p>
         <ul class="faico clear">
           <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
           <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
@@ -143,44 +135,16 @@ Licence URI: https://www.os-templates.com/template-terms
         </ul>
       </div>
       <div class="one_quarter">
-        <h6 class="heading">Felis lobortis pulvinar</h6>
+        <h6 class="heading">Thông tin liên hệ</h6>
         <ul class="nospace linklist contact">
           <li><i class="fas fa-map-marker-alt"></i>
             <address>
-              Street Name &amp; Number, Town, Postcode/Zip
+              Hà Nội
             </address>
           </li>
           <li><i class="fas fa-phone"></i> +00 (123) 456 7890</li>
           <li><i class="fas fa-fax"></i> +00 (123) 456 7890</li>
           <li><i class="far fa-envelope"></i> info@domain.com</li>
-        </ul>
-      </div>
-      <div class="one_quarter">
-        <h6 class="heading">In cursus placerat velit</h6>
-        <ul class="nospace linklist">
-          <li><a href="#">Maecenas sem fusce quis</a></li>
-          <li><a href="#">Vel leo semper rhoncus ut</a></li>
-          <li><a href="#">Suscipit pede eu diam class</a></li>
-          <li><a href="#">Aptent taciti sociosqu ad</a></li>
-        </ul>
-      </div>
-      <div class="one_quarter">
-        <h6 class="heading">Litora torquent conubia</h6>
-        <ul class="nospace linklist">
-          <li>
-            <article>
-              <p class="nospace btmspace-10"><a href="#">Nostra per inceptos himenaeos cras augue est dictum
-                  quis&hellip;</a></p>
-              <time class="block font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-            </article>
-          </li>
-          <li>
-            <article>
-              <p class="nospace btmspace-10"><a href="#">Suscipit vel est in pulvinar aliquam vulputate purus in
-                  tincidunt&hellip;</a></p>
-              <time class="block font-xs" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-            </article>
-          </li>
         </ul>
       </div>
     </footer>

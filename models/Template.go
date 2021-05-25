@@ -96,3 +96,36 @@ func (this *Template) Getlist(page int) ([]res.ResTempList, int, error) {
 
 	return detail, numPage, err
 }
+
+func (this *Template) GetRand() ([]res.ResTempList, error) {
+	results, err := db.Query("select Id, Title from Template where IsDecription = 0 ORDER BY RAND() LIMIT 4")
+	if err != nil {
+		return []res.ResTempList{}, err
+	}
+	detail := []res.ResTempList{}
+	for results.Next() {
+		detailIns := res.ResTempList{}
+		err = results.Scan(&detailIns.Id, &detailIns.Title)
+		if err != nil {
+			return []res.ResTempList{}, err
+		}
+		detail = append(detail, detailIns)
+	}
+
+	for index, item := range detail {
+		r, err := this.Get(item.Id)
+		if err != nil {
+			log.Println(err, "err models/Template.go:118")
+		}
+		for _, i := range r.Context {
+			if i.Type == "image" {
+				detail[index].Image = i.String
+				break
+			}
+		}
+		if detail[index].Image == "" {
+			detail[index].Image = "News.jpg"
+		}
+	}
+	return detail, err
+}

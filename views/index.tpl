@@ -39,21 +39,48 @@ Licence URI: https://www.os-templates.com/template-terms
   </header>
 </div>
 <div class="wrapper row1">
-  <div class="hoc clear">
-    <nav id="mainav">
+  <div class="hoc clear" style="display: flex;align-items: center;justify-content: space-between;">
+    <nav id="mainav" style="width: 70%;">
       <ul class="clear">
         <li class="active"><a href="./">Trang Chủ</a></li>
         <li><a class="drop" href="#">Giới thiệu</a>
           <ul>
+            <li><a href="./thongtin/15">Giới Thiệu Bệnh Viện</a></li>
+            <li><a href="./thongtin/16">Nhiệm Vụ Của Bệnh Viện</a></li>
             <li><a href="./thongtin/1">Sơ Đồ Bệnh Viện</a></li>
             <li><a href="./thongtin/2">Ban Giám Đốc</a></li>
+            <li><a href="./thongtin/17">Phó Giám Đốc</a></li>
             <li><a href="./thongtin/12">Thành Tích</a></li>
           </ul>
         </li>
+         <li><a class="drop" href="#">Về Các Phòng Ban</a>
+            <ul>
+                <li><a href="./thongtin/18">Khoa Khám bệnh</a></li>
+                <li><a href="./thongtin/19">Khoa Cấp Cứu</a></li>
+                <li><a href="./thongtin/20">Khoa khám bệnh theo yêu cầu</a></li>
+                <li><a href="./thongtin/21">Phòng Vật tư- Trang thiết bị Y tế</a></li>
+                <li><a href="./thongtin/22">Khoa Kiểm soát nhiễm khuẩn</a></li>
+                <li><a href="./thongtin/23">Khoa Vi rút - Ký sinh trùng</a></li>
+            </ul>
+        </li>
         <li><a href="./thongtin">Tin tức</a></li>
-        <li><a href="#">Chat với chúng tôi</a></li>
+        <li><a href="./chat">Chat với chúng tôi</a></li>
       </ul>
     </nav>
+    {{if .isLogin}}
+        <nav id="mainav" style="width: 30%;text-align: right;">
+        <ul class="clear">
+            <li><a class="drop" href="#">{{.name}}</a>
+                <ul>
+                    <li><a style="text-align: left;" href="#">Thông Tin Người Dùng</a></li>
+                    <li><a style="text-align: left;" href="?logout=true">Đăng Xuất</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    {{else}}
+     <div style="width: 30%;text-align: right;"><a href="./login">ĐĂNG NHẬP</a></div>
+     {{end}}
   </div>
 </div>
 <div class="wrapper bgded overlay" style="background-image:url('images/Thumbnail.jpg');">
@@ -63,8 +90,8 @@ Licence URI: https://www.os-templates.com/template-terms
       <h3 class="heading">Chào mừng đến với bệnh viện</h3>
       <footer>
         <ul class="nospace inline pushright">
-          <li><a class="btn" href="#">Thông tin</a></li>
-          <li><a class="btn inverse" href="#">Tham quan</a></li>
+          <li><a class="btn" href="./thongtin/15">Thông tin</a></li>
+          <li><a class="btn inverse" href="./thongtin/16">Nhiệm Vụ</a></li>
         </ul>
       </footer>
     </article>
@@ -253,60 +280,34 @@ Licence URI: https://www.os-templates.com/template-terms
   </section>
 </div>
 <div class="wrapper row4">
-  <footer id="footer" class="hoc clear"> 
+  <footer id="footer" class="hoc clear">
 
-    <div class="one_quarter first">
-      <h1 class="logoname clear"><a href="#"><i class="fas fa-handshake"></i> <span>Shicso</span></a></h1>
-      <p class="btmspace-30">Leo scelerisque at imperdiet in volutpat quis turpis praesent sit amet ante sed erat tempor consequat sed ut nibh nullam sagittis nunc a turpis nec [<a href="#">&hellip;</a>]</p>
-      <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
-      </ul>
-    </div>
-    <div class="one_quarter">
-      <h6 class="heading">Felis lobortis pulvinar</h6>
-      <ul class="nospace linklist contact">
-        <li><i class="fas fa-map-marker-alt"></i>
-          <address>
-          Street Name &amp; Number, Town, Postcode/Zip
-          </address>
-        </li>
-        <li><i class="fas fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fas fa-fax"></i> +00 (123) 456 7890</li>
-        <li><i class="far fa-envelope"></i> info@domain.com</li>
-      </ul>
-    </div>
-    <div class="one_quarter">
-      <h6 class="heading">In cursus placerat velit</h6>
-      <ul class="nospace linklist">
-        <li><a href="#">Maecenas sem fusce quis</a></li>
-        <li><a href="#">Vel leo semper rhoncus ut</a></li>
-        <li><a href="#">Suscipit pede eu diam class</a></li>
-        <li><a href="#">Aptent taciti sociosqu ad</a></li>
-      </ul>
-    </div>
-    <div class="one_quarter">
-      <h6 class="heading">Litora torquent conubia</h6>
-      <ul class="nospace linklist">
-        <li>
-          <article>
-            <p class="nospace btmspace-10"><a href="#">Nostra per inceptos himenaeos cras augue est dictum quis&hellip;</a></p>
-            <time class="block font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-          </article>
-        </li>
-        <li>
-          <article>
-            <p class="nospace btmspace-10"><a href="#">Suscipit vel est in pulvinar aliquam vulputate purus in tincidunt&hellip;</a></p>
-            <time class="block font-xs" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-          </article>
-        </li>
-      </ul>
-    </div>
-
-  </footer>
+        <div class="one_quarter first">
+          <h1 class="logoname clear"><a href="../index.html"><i class="fas fa-handshake"></i> <span>Shicso</span></a></h1>
+          <p class="btmspace-30">Dịch vụ chăm sóc sức khỏe đi đầu thế giới Với sự hỗ trợ của các
+            chuyên gia đầu ngành trên toàn thế giới về các vấn đề trong y học [<a href="#">&hellip;</a>]</p>
+          <ul class="faico clear">
+            <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+          </ul>
+        </div>
+        <div class="one_quarter">
+          <h6 class="heading">Thông tin liên hệ</h6>
+          <ul class="nospace linklist contact">
+            <li><i class="fas fa-map-marker-alt"></i>
+              <address>
+                Hà Nội
+              </address>
+            </li>
+            <li><i class="fas fa-phone"></i> +00 (123) 456 7890</li>
+            <li><i class="fas fa-fax"></i> +00 (123) 456 7890</li>
+            <li><i class="far fa-envelope"></i> info@domain.com</li>
+          </ul>
+        </div>
+      </footer>
 </div>
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
