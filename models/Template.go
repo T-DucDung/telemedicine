@@ -3,7 +3,6 @@ package models
 import (
 	"errors"
 	"log"
-	"math"
 	"strconv"
 	"sync"
 	"telemedicine/res"
@@ -59,7 +58,10 @@ func (this *Template) Getlist(page int) ([]res.ResTempList, int, error) {
 		}
 		detail = append(detail, detailIns)
 	}
-	numPage := int(math.RoundToEven(float64(len(detail) / 5)))
+	numPage := (len(detail) / 5)
+	if (len(detail) % 5) != 0 {
+		numPage++
+	}
 	if page > numPage {
 		return nil, 0, errors.New("err")
 	}
