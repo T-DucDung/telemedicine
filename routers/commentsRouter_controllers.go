@@ -63,4 +63,13 @@ func init() {
             Filters: nil,
             Params: nil})
 
+    beego.GlobalControllerRouter["telemedicine/controllers:UserController"] = append(beego.GlobalControllerRouter["telemedicine/controllers:UserController"],
+        beego.ControllerComments{
+            Method: "Get",
+            Router: "/thongtinnguoidung",
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
 }

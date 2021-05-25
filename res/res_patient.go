@@ -10,6 +10,6 @@ type ResPatient struct {
 
 type History struct {
 	Id          int    `json:"id"`
-	CreateAt    int64  `json:"create_at"`
+	CreateAt    string  `json:"create_at"`
 	Description string `json:"description"`
 }

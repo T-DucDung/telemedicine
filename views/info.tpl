@@ -41,53 +41,53 @@ Licence URI: https://www.os-templates.com/template-terms
 </div>
 <div class="wrapper row1">
   <div class="hoc clear" style="display: flex;align-items: center;justify-content: space-between;">
-      <nav id="mainav" style="width: 70%;">
-        <ul class="clear">
-          <li><a href="./">Trang Chủ</a></li>
-          <li><a class="drop" href="#">Giới thiệu</a>
-            <ul>
-              <li><a href="./thongtin/15">Giới Thiệu Bệnh Viện</a></li>
-              <li><a href="./thongtin/16">Nhiệm Vụ Của Bệnh Viện</a></li>
-              <li><a href="./thongtin/1">Sơ Đồ Bệnh Viện</a></li>
-              <li><a href="./thongtin/2">Ban Giám Đốc</a></li>
-              <li><a href="./thongtin/17">Phó Giám Đốc</a></li>
-              <li><a href="./thongtin/12">Thành Tích</a></li>
-            </ul>
-          </li>
-           <li><a class="drop" href="#">Về Các Phòng Ban</a>
-              <ul>
-                  <li><a href="./thongtin/18">Khoa Khám bệnh</a></li>
-                  <li><a href="./thongtin/19">Khoa Cấp Cứu</a></li>
-                  <li><a href="./thongtin/20">Khoa khám bệnh theo yêu cầu</a></li>
-                  <li><a href="./thongtin/21">Phòng Vật tư- Trang thiết bị Y tế</a></li>
-                  <li><a href="./thongtin/22">Khoa Kiểm soát nhiễm khuẩn</a></li>
-                  <li><a href="./thongtin/23">Khoa Vi rút - Ký sinh trùng</a></li>
-              </ul>
-          </li>
-          <li class="active" ><a href="../thongtin">Tin tức</a></li>
-          <li><a href="./chat">Chat với chúng tôi</a></li>
-        </ul>
-      </nav>
-      {{if .isLogin}}
-          <nav id="mainav" style="width: 30%;text-align: right;">
+        <nav id="mainav" style="width: 70%;">
           <ul class="clear">
-              <li><a class="drop" href="#">{{.name}}</a>
-                  <ul>
-                      <li><a style="text-align: left;" href="./thongtinnguoidung">Thông Tin Người Dùng</a></li>
-                      <li><a style="text-align: left;" href="?logout=true">Đăng Xuất</a></li>
-                  </ul>
-              </li>
+            <li><a href="../">Trang Chủ</a></li>
+            <li><a class="drop" href="#">Giới thiệu</a>
+              <ul>
+                <li><a href="../thongtin/15">Giới Thiệu Bệnh Viện</a></li>
+                <li><a href="../thongtin/16">Nhiệm Vụ Của Bệnh Viện</a></li>
+                <li><a href="../thongtin/1">Sơ Đồ Bệnh Viện</a></li>
+                <li><a href="../thongtin/2">Ban Giám Đốc</a></li>
+                <li><a href="../thongtin/17">Phó Giám Đốc</a></li>
+                <li><a href="../thongtin/12">Thành Tích</a></li>
+              </ul>
+            </li>
+             <li><a class="drop" href="#">Về Các Phòng Ban</a>
+                <ul>
+                    <li><a href="../thongtin/18">Khoa Khám bệnh</a></li>
+                    <li><a href="../thongtin/19">Khoa Cấp Cứu</a></li>
+                    <li><a href="../thongtin/20">Khoa khám bệnh theo yêu cầu</a></li>
+                    <li><a href="../thongtin/21">Phòng Vật tư- Trang thiết bị Y tế</a></li>
+                    <li><a href="../thongtin/22">Khoa Kiểm soát nhiễm khuẩn</a></li>
+                    <li><a href="../thongtin/23">Khoa Vi rút - Ký sinh trùng</a></li>
+                </ul>
+            </li>
+            <li><a href="../thongtin">Tin tức</a></li>
+            <li><a href="../chat">Chat với chúng tôi</a></li>
           </ul>
-          </nav>
-      {{else}}
-       <div style="width: 30%;text-align: right;"><a href="./login">ĐĂNG NHẬP</a></div>
-       {{end}}
-    </div>
+        </nav>
+        {{if .isLogin}}
+            <nav id="mainav" style="width: 30%;text-align: right;">
+            <ul class="clear">
+                <li><a class="drop" href="#">{{.name}}</a>
+                    <ul>
+                        <li><a style="text-align: left;" href="./thongtinnguoidung">Thông Tin Người Dùng</a></li>
+                        <li><a style="text-align: left;" href="?logout=true">Đăng Xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </nav>
+        {{else}}
+         <div style="width: 30%;text-align: right;"><a href="./login">ĐĂNG NHẬP</a></div>
+         {{end}}
+      </div>
 </div>
 <div class="wrapper bgded overlay dark" style="background-image:url('/images/demo/backgrounds/01.png');">
   <div id="breadcrumb" class="hoc clear">
 
-        <h1 class="heading">Trang Tổng Hợp Tin Tức</h1>
+    <h1 class="heading">Xin Chào, {{.name}} !</h1>
 
   </div>
 </div>
@@ -97,32 +97,43 @@ Licence URI: https://www.os-templates.com/template-terms
 
     <div class="content">
       <div id="comments">
-      <ul>
-        {{range $key, $val := .res}}
-            <li>
-            <div class="news">
-                <a href="./thongtin/{{$val.Id}}" style="display: flex;">
-                    <img src="/images/decription/{{$val.Image}}" style="width: 300px;border-radius: 5px;height: 200px;"> </img>
-                    <div style="margin-left: 50px;">
-                        <h1>{{$val.Title}}</h1>
-                        <div style="color: black;font-family: charter, Georgia, Cambria, `Times New Roman`, Times, serif;font-size: 16px;">{{$val.Context}}</div>
-                    </div>
-                </a>
+      <div style="text-align: center;">
+      <h1 style="font-size: 40px;">Thông tin của bạn </h1>
+      </div>
+      <div class= "string" style="color: black;font-family: charter, Georgia, Cambria, `Times New Roman`, Times, serif;font-size: 16px;">
+           Họ và Tên: {{.res.Name}}
+      </div>
+      <div class= "string" style="color: black;font-family: charter, Georgia, Cambria, `Times New Roman`, Times, serif;font-size: 16px;">
+           Số Điện Thoại: {{.res.Phone}}
+      </div>
+      <div class= "string" style="color: black;font-family: charter, Georgia, Cambria, `Times New Roman`, Times, serif;font-size: 16px;">
+           Địa Chỉ: {{.res.Address}}
+      </div>
+      <div style="text-align: center;">
+            <h1 style="font-size: 40px; margin-top: 25px;">Lịch sử khám bệnh của bạn </h1>
             </div>
-            </li>
+      <ul>
+        {{range $key, $val := .res.ListHis}}
+        <li>
+        <div style="display: flex;" >
+            <div class= "string" style="color: black;font-family: charter, Georgia, Cambria, `Times New Roman`, Times, serif;font-size: 16px;margin-right: 45px;">
+                Lần thứ {{$val.Id}}
+            </div>
+            <div class= "string" style="color: black;font-family: charter, Georgia, Cambria, `Times New Roman`, Times, serif;font-size: 16px;">
+                Thời Gian  {{$val.CreateAt}}
+            </div>
+            </div>
+            <div class= "string" style="color: black;font-family: charter, Georgia, Cambria, `Times New Roman`, Times, serif;font-size: 16px;">
+                Nội Dung Khám
+            </div>
+            <div class= "string" style="color: black;font-family: charter, Georgia, Cambria, `Times New Roman`, Times, serif;font-size: 16px;">
+                {{$val.Description}}
+            </div>
+        </li>
         {{end}}
       </ul>
-      <div class="paginate" style="text-align: center;">
-        {{if .truoc}}
-        <a href="./thongtin?page={{.numtrc}}" class="previous" style="text-decoration: none;display: inline-block;padding: 8px 16px;background-color: #f1f1f1;color: black;">&laquo; Trang trước</a>
-        {{end}}
-        {{if .sau}}
-        <a href="./thongtin?page={{.numsau}}" class="next" style="text-decoration: none;display: inline-block;padding: 8px 16px;background-color: #f1f1f1;color: black;">Trang Sau &raquo;</a>
-        {{end}}
-      </div>
       </div>
     </div>
-
     <!-- / main body -->
     <div class="clear"></div>
   </main>

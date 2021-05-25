@@ -3,8 +3,10 @@ package models
 import (
 	"crypto/md5"
 	"encoding/hex"
+	"fmt"
 	"strconv"
 	"telemedicine/res"
+	"time"
 )
 
 var Id = 1
@@ -26,18 +28,23 @@ type History struct {
 
 func (this *Patient) Get(id int) (res.ResPatient, error) {
 	resIns := res.ResPatient{}
-	err := db.QueryRow("select Name, Phone, Address from Patient where Id = " + strconv.Itoa(id)).Scan(&resIns.Id)
+	err := db.QueryRow("select Name, Phone, Address from Patient where Id = "+strconv.Itoa(id)).Scan(&resIns.Name, &resIns.Phone, &resIns.Address)
 	if err != nil {
 		return res.ResPatient{}, err
 	}
-	results, err := db.Query("select Id, CreateAt, Description from History where IdPatient = " + strconv.Itoa(id))
+	results, err := db.Query("select Id, CreateAt, Description from History where IdPatient = " + strconv.Itoa(id) + " order by id desc")
 	detail := []res.History{}
 	for results.Next() {
+		var timeIns int64
 		detailIns := res.History{}
-		err = results.Scan(&detailIns.Id, &detailIns.CreateAt, &detailIns.Description)
+		err = results.Scan(&detailIns.Id, &timeIns, &detailIns.Description)
 		if err != nil {
 			return res.ResPatient{}, err
 		}
+		t := time.Unix(timeIns, 0)
+		detailIns.CreateAt = fmt.Sprintf("%02d:%02d:%02d %02d-%02d-%d",
+			t.Hour(), t.Minute(), t.Second(),
+			t.Day(), t.Month(), t.Year())
 		detail = append(detail, detailIns)
 	}
 	resIns.ListHis = detail
