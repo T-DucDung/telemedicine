@@ -7,6 +7,15 @@ import (
 
 func init() {
 
+    beego.GlobalControllerRouter["telemedicine/controllers:ChatController"] = append(beego.GlobalControllerRouter["telemedicine/controllers:ChatController"],
+        beego.ControllerComments{
+            Method: "Get",
+            Router: "/",
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
     beego.GlobalControllerRouter["telemedicine/controllers:GioiThieuController"] = append(beego.GlobalControllerRouter["telemedicine/controllers:GioiThieuController"],
         beego.ControllerComments{
             Method: "Get",

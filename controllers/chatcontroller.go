@@ -4,12 +4,12 @@ import (
 	beego "github.com/beego/beego/v2/server/web"
 )
 
-type MainController struct {
+type ChatController struct {
 	beego.Controller
 }
 
 // @router / [get]
-func (c *MainController) Get() {
-	c.TplName = "index.tpl"
+func (c *ChatController) Get() {
+	c.TplName = "chat.tpl"
 	return
 }
