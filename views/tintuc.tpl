@@ -80,7 +80,7 @@ Licence URI: https://www.os-templates.com/template-terms
           </ul>
           </nav>
       {{else}}
-       <div style="width: 30%;text-align: right;"><a href="./login">ĐĂNG NHẬP</a></div>
+       <div style="width: 30%;text-align: right;"><a href="/login">ĐĂNG NHẬP</a></div>
        {{end}}
     </div>
 </div>

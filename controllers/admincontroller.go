@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"log"
+	"telemedicine/req"
 
 	beego "github.com/beego/beego/v2/server/web"
 )
@@ -18,7 +19,15 @@ func (c *AdminController) Get() {
 
 // @router /admin/news [post]
 func (c *AdminController) Post() {
-	log.Println(c.Ctx.Request.Form)
+	reqIns := req.ReqNews{}
+	err := c.ParseForm(&reqIns)
+	if err != nil {
+		return
+	}
+	log.Println(reqIns)
+
+
+
 	c.TplName = "admin-news.tpl"
 	return
 }
