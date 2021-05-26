@@ -20,12 +20,12 @@
                     <h3 class="login-heading mb-4">Thông tin đăng nhập</h3>
                     <form action="./login" method="post">
                       <div class="form-label-group">
-                        <input type="text" id="inputText" class="form-control" placeholder="Số điện thoại" required >
+                        <input type="text" id="inputText" name="inputText" class="form-control" placeholder="Số điện thoại" required >
                         <label for="inputText">Số điện thoại</label>
                       </div>
 
                       <div class="form-label-group">
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Mật khẩu" required>
+                        <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Mật khẩu" required>
                         <label for="inputPassword">Mật khẩu</label>
                       </div>
 

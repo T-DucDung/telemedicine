@@ -17,6 +17,6 @@ type ReqCeo struct {
 }
 
 type LoginReq struct {
-	InputText     string `json:"inputText"`
-	InputPassword string `json:"inputPassword"`
+	InputText     string `form:"inputText"`
+	InputPassword string `form:"inputPassword"`
 }

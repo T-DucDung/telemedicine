@@ -9,8 +9,8 @@ import (
 	"time"
 )
 
-var Id = 1
-var Name = "Trần Văn An"
+var Id = -1
+var Name = ""
 
 type Patient struct {
 	Id      int    `json:"id"`
