@@ -15,3 +15,8 @@ type ReqCeo struct {
 	Address string `json:"address"`
 	Image   string `json:"image"`
 }
+
+type LoginReq struct {
+	InputText     string `json:"inputText"`
+	InputPassword string `json:"inputPassword"`
+}

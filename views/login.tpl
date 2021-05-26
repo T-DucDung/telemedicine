@@ -18,7 +18,7 @@
                 <div class="row">
                   <div class="col-md-9 col-lg-8 mx-auto">
                     <h3 class="login-heading mb-4">Thông tin đăng nhập</h3>
-                    <form action="./login">
+                    <form action="./login" method="post">
                       <div class="form-label-group">
                         <input type="text" id="inputText" class="form-control" placeholder="Số điện thoại" required >
                         <label for="inputText">Số điện thoại</label>
