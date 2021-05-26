@@ -1,22 +1,45 @@
 package controllers
 
 import (
-	beego "github.com/beego/beego/v2/server/web"
+	"encoding/json"
 	"log"
 	"telemedicine/models"
+
+	beego "github.com/beego/beego/v2/server/web"
 )
 
 type GioiThieuController struct {
 	beego.Controller
 }
 
-// @router /thongtin/:id
-func (c *GioiThieuController) GetGt(id int) {
-	if models.Id == -1 {
+func (c *GioiThieuController) Prepare() {
+	userSession := c.GetSession("user")
+
+	if userSession == nil {
 		c.Data["isLogin"] = false
 	} else {
+		var user models.Patient
+		bytedata, _ := json.Marshal(userSession)
+		json.Unmarshal(bytedata, &user)
 		c.Data["isLogin"] = true
-		c.Data["name"] = models.Name
+		c.Data["name"] = user.Name
+	}
+
+	c.Layout = "layout.tpl"
+}
+
+// @router /thongtin/:id
+func (c *GioiThieuController) GetGt(id int) {
+	userSession := c.GetSession("user")
+
+	if userSession == nil {
+		c.Data["isLogin"] = false
+	} else {
+		var user models.Patient
+		bytedata, _ := json.Marshal(userSession)
+		json.Unmarshal(bytedata, &user)
+		c.Data["isLogin"] = true
+		c.Data["name"] = user.Name
 	}
 
 	temp := models.Template{}
@@ -39,12 +62,6 @@ func (c *GioiThieuController) GetGt(id int) {
 
 // @router /thongtin/
 func (c *GioiThieuController) Get() {
-	if models.Id == -1 {
-		c.Data["isLogin"] = false
-	} else {
-		c.Data["isLogin"] = true
-		c.Data["name"] = models.Name
-	}
 
 	page, err := c.GetInt("page", 1)
 	log.Println(page, "page controllers/gioithieu.go:28")

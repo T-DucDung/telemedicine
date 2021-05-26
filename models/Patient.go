@@ -3,6 +3,7 @@ package models
 import (
 	"crypto/md5"
 	"encoding/hex"
+	"errors"
 	"fmt"
 	"strconv"
 	"telemedicine/res"
@@ -51,21 +52,21 @@ func (this *Patient) Get(id int) (res.ResPatient, error) {
 	return resIns, nil
 }
 
-func (this *Patient) Login(sdt, pass string) (bool, error) {
+func (this *Patient) Login(sdt, pass string) (Patient, error) {
 	passIns := ""
 	idIns := -1
 	nameIns := ""
 	err := db.QueryRow("select Pass, Id, Name from Patient where Phone = '"+sdt+"'").Scan(&passIns, &idIns, &nameIns)
 	if err != nil {
-		return false, err
+		return Patient{}, err
 	}
 
 	if GetMD5Hash(pass) == passIns {
 		Id = idIns
 		Name = nameIns
-		return true, nil
+		return Patient{Id: idIns, Name: nameIns}, nil
 	}
-	return false, nil
+	return Patient{}, errors.New("password not match")
 }
 
 func GetMD5Hash(text string) string {
