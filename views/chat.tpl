@@ -76,7 +76,7 @@ Licence URI: https://www.os-templates.com/template-terms
                 <li><a class="drop" href="#">{{.name}}</a>
                     <ul>
                         <li><a style="text-align: left;" href="./thongtinnguoidung">Thông Tin Người Dùng</a></li>
-                        <li><a style="text-align: left;" href="?logout=true">Đăng Xuất</a></li>
+                        <li><a style="text-align: left;" href="../?logout=true">Đăng Xuất</a></li>
                     </ul>
                 </li>
             </ul>
