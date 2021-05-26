@@ -12,6 +12,10 @@ func main() {
 
 	web.SetStaticPath("/layout", "layout")
 	web.SetStaticPath("/images", "images")
+	web.SetStaticPath("/plugin", "plugin")
+	web.SetStaticPath("/css", "css")
+	web.SetStaticPath("/scss", "scss")
+	web.SetStaticPath("/js", "js")
 	models.InitConnectDataBase()
 	beego.Run()
 }

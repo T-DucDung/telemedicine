@@ -12,4 +12,5 @@ func init() {
 	beego.Router("/chat", &controllers.ChatController{})
 	beego.Router("/thongtinnguoidung", &controllers.UserController{})
 	beego.Include(&controllers.GioiThieuController{})
+	beego.Include(&controllers.AdminController{})
 }
