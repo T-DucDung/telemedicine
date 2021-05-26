@@ -14,7 +14,8 @@ type LoginController struct {
 
 // @router /login/ [get]
 func (c *LoginController) Get() {
-	if models.Id != -1 {
+	userSession := c.GetSession("user")
+	if userSession != nil {
 		c.Redirect("/", 302)
 	}
 	c.TplName = "login.tpl"
@@ -31,8 +32,16 @@ func (c *LoginController) Post() {
 	//log.Println(u, "u controllers/logincontroller.go:31")
 
 	p := models.Patient{}
-	ok, err := p.Login(u.InputText, u.InputPassword)
-	if err != nil || ok == false {
+	user, err := p.Login(u.InputText, u.InputPassword)
+
+	if err != nil {
+		log.Println(err, "err controllers/logincontroller.go:36")
+		c.Redirect("/login", 302)
+		return
+	}
+
+	err = c.SetSession("user", user)
+	if err != nil {
 		log.Println(err, "err controllers/logincontroller.go:36")
 		c.Redirect("/login", 302)
 		return
