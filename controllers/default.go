@@ -12,17 +12,7 @@ type MainController struct {
 }
 
 func (c *MainController) Prepare() {
-	userSession := c.GetSession("user")
 
-	if userSession == nil {
-		c.Data["isLogin"] = false
-	} else {
-		var user models.Patient
-		bytedata, _ := json.Marshal(userSession)
-		json.Unmarshal(bytedata, &user)
-		c.Data["isLogin"] = true
-		c.Data["name"] = user.Name
-	}
 	c.Layout = "layout.tpl"
 }
 
@@ -32,6 +22,17 @@ func (c *MainController) Get() {
 	if logout == "true" {
 		c.DelSession("user")
 		c.Redirect("/", 302)
+	}
+
+	userSession := c.GetSession("user")
+	if userSession == nil {
+		c.Data["isLogin"] = false
+	} else {
+		var user models.Patient
+		bytedata, _ := json.Marshal(userSession)
+		json.Unmarshal(bytedata, &user)
+		c.Data["isLogin"] = true
+		c.Data["name"] = user.Name
 	}
 
 	c.TplName = "index.tpl"

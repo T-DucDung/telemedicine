@@ -14,10 +14,6 @@ type LoginController struct {
 
 // @router /login/ [get]
 func (c *LoginController) Get() {
-	userSession := c.GetSession("user")
-	if userSession != nil {
-		c.Redirect("/", 302)
-	}
 	c.TplName = "login.tpl"
 	return
 }

@@ -12,6 +12,12 @@ type ChatController struct {
 }
 
 func (c *ChatController) Prepare() {
+
+	c.Layout = "layout.tpl"
+}
+
+// @router / [get]
+func (c *ChatController) Get() {
 	userSession := c.GetSession("user")
 
 	if userSession == nil {
@@ -23,12 +29,6 @@ func (c *ChatController) Prepare() {
 		c.Data["isLogin"] = true
 		c.Data["name"] = user.Name
 	}
-	c.Layout = "layout.tpl"
-}
-
-// @router / [get]
-func (c *ChatController) Get() {
-
 	c.TplName = "chat.tpl"
 	return
 }

@@ -13,16 +13,6 @@ type UserController struct {
 }
 
 func (c *UserController) Prepare() {
-	userSession := c.GetSession("user")
-	var user models.Patient
-	if userSession == nil {
-		c.Data["isLogin"] = false
-	} else {
-		bytedata, _ := json.Marshal(userSession)
-		json.Unmarshal(bytedata, &user)
-		c.Data["isLogin"] = true
-		c.Data["name"] = user.Name
-	}
 	c.Layout = "layout.tpl"
 }
 
