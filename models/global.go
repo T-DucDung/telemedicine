@@ -20,7 +20,7 @@ var ctx = context.Background()
 
 func InitConnectDataBase() {
 	onceM.Do(func() {
-		db, err = sql.Open("mysql", "root:Dung13524685@tcp(192.168.0.107:3306)/telemedicine")
+		db, err = sql.Open("mysql", "root:Dung13524685@tcp(127.0.0.1:3306)/telemedicine")
 		if err != nil {
 			log.Println("error connect database : ", err)
 		} else {
